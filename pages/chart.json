@@ -1,0 +1,79 @@
+{
+    "type": "page",
+    "title": "图表",
+    "body": [
+      {
+        "type": "input-text",
+        "label": "",
+        "name": "text",
+        "id": "u:56b4a8c2ede5",
+        "value": "温度曲线"
+      },
+      {
+        "type": "chart",
+        "config": {
+          "xAxis": {
+            "type": "category",
+            "data": [
+              "Mon",
+              "Tue",
+              "Wed",
+              "Thu",
+              "Fri",
+              "Sat",
+              "Sun"
+            ],
+            "id": "u:c8be6db1deed"
+          },
+          "yAxis": {
+            "type": "value",
+            "id": "u:104c3b5c3fbc"
+          },
+          "series": [
+            {
+              "data": [
+                1120,
+                932,
+                901,
+                934,
+                1290,
+                1330,
+                1320
+              ],
+              "type": "line",
+              "id": "u:4ba4e7c0d280"
+            },
+            {
+              "data": [
+                220,
+                232,
+                951,
+                934,
+                1220,
+                1210,
+                1320
+              ],
+              "type": "line",
+              "id": "u:22a4e7c0d280"
+            }
+          ],
+          "backgroundColor": "transparent"
+        },
+        "replaceChartOption": true,
+        "id": "u:38341698da67",
+        "dataFilter": "",
+        "name": "天气曲线"
+      }
+    ],
+    "id": "u:bb570ab5bbcf",
+    "aside": [
+    ],
+    "toolbar": [
+    ],
+    "regions": [
+      "body"
+    ],
+    "pullRefresh": {
+      "disabled": true
+    }
+  }

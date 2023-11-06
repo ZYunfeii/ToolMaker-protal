@@ -1,0 +1,6 @@
+{
+    "type": "log",
+    "height": 800,
+    "source": "http://localhost:8080/logs",
+    "maxLength": 50
+  }

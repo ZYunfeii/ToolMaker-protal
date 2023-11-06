@@ -1,0 +1,16 @@
+{
+  "type": "page",
+  "body": {
+    "type": "form",
+    "api": "http://localhost:8080/code/submit",
+    "body": [
+      {
+        "type": "editor",
+        "name": "editor",
+        "label": "编辑器",
+        "placeholder": "public class UserSolution {\n public static void main(String[] args) {\n System.out.println(\"Hello, World!\");\n}\n}\n",
+        "language": "java"
+      }
+    ]
+  }
+}

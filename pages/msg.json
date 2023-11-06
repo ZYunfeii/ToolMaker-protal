@@ -1,0 +1,25 @@
+{
+    "type": "page",
+    "body": {
+      "type": "form",
+      "api": "http://localhost:8080/timedmsg/submit",
+      "body": [
+        {
+          "type": "input-datetime",
+          "name": "date",
+          "label": "发送时间"
+        },
+        {
+          "name": "email",
+          "type": "input-email",
+          "label": "邮箱",
+          "value": "quanjx0127@163.com"
+        },
+        {
+            "name": "textarea",
+            "type": "textarea",
+            "label": "定时消息内容"
+          }
+      ]
+    }
+  }

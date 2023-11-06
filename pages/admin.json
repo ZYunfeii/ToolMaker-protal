@@ -1,0 +1,91 @@
+{
+  "type": "page",
+  "body": [
+    {
+      "type": "tpl",
+      "id": "u:de6a8c705c4e",
+      "tpl": "",
+      "wrapperComponent": "",
+      "inline": false
+    }
+  ],
+  "id": "u:0143f549f3de",
+  "title": "Best Tool",
+  "asideResizor": false,
+  "pullRefresh": {
+    "disabled": true
+  },
+  "regions": [
+    "body",
+    "toolbar",
+    "aside",
+    "header"
+  ],
+  "aside": [
+    {
+      "type": "nav",
+      "stacked": true,
+      "links": [
+        {
+          "label": "日记",
+          "to": "/diary.html",
+          "target": "_self",
+          "id": "0",
+          "children": [
+          ],
+          "icon": "fa fa-stack-exchange"
+        },
+        {
+          "label": "文件上传",
+          "to": "/file_upload.html",
+          "target": "_self",
+          "id": "1",
+          "children": [
+          ],
+          "icon": "fa fa-snapchat-ghost"
+        },
+        {
+          "label": "代码编辑",
+          "to": "/code.html",
+          "icon": "fa fa-slideshare",
+          "target": "_self",
+          "badge": "",
+          "children": [
+          ],
+          "id": "2"
+        },
+        {
+          "label": "图表",
+          "to": "chart.html",
+          "icon": "fa fa-soundcloud",
+          "target": "_self",
+          "badge": "",
+          "children": [
+          ],
+          "id": "3"
+        },
+        {
+          "label": "定时邮件",
+          "to": "msg.html",
+          "icon": "fa fa-slideshare",
+          "target": "_self",
+          "badge": "",
+          "children": [
+          ],
+          "id": "4"
+        },
+        {
+          "label": "日志",
+          "to": "log.html",
+          "icon": "fa fa-stack-overflow",
+          "target": "_self",
+          "badge": "",
+          "children": [
+          ],
+          "id": "5"
+        }
+      ],
+      "id": "u:88ec34be954b"
+    }
+  ]
+}

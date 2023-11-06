@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>amis admin</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link rel="stylesheet" title="default" href="https://unpkg.com/amis@3.2.0/sdk/sdk.css" />
+  <link rel="stylesheet" href="https://unpkg.com/amis@3.2.0/sdk/helper.css" />
+  <link rel="stylesheet" href="https://unpkg.com/amis@3.2.0/sdk/iconfont.css" />
+  <script src="https://unpkg.com/amis@3.2.0/sdk/sdk.js"></script>
+  <script src="https://unpkg.com/vue@2"></script>
+  <script src="https://unpkg.com/history@4.10.1
+/umd/history.js"></script>
+  <script src="js/base.js"></script>
+  <style>
+    html,
+    body,
+    .app-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root" class="app-wrapper"></div>
+  <script src="sdk.js"></script>
+  <script type="text/javascript">
+    ajaxGet('http://localhost:8080/user/info', function(response) {
+        if (response !== null && response !== undefined && response.trim() !== "") {
+            var userInfoJson = JSON.parse(response);
+            let amis = amisRequire('amis/embed');
+            ajaxGet('pages/chart.json', function(response){
+                var amisJson = JSON.parse(response);
+                amisJson.body[1].config.xAxis.data = [];
+                amisJson.body[1].config.series[0].data = [];
+                amisJson.body[1].config.series[1].data = [];
+                ajaxGet('http://localhost:8080/chart/weather?city=北京', function(response) {
+                    console.log(response);
+                    if (response !== null && response !== undefined && response.trim() !== "") {
+                        var weatherResponse = JSON.parse(response);
+                        var weatherList = weatherResponse.data;
+                        for (var item of weatherList) {
+                            amisJson.body[1].config.xAxis.data.push(item.date);
+                            amisJson.body[1].config.series[0].data.push(item.lowTemperature );
+                            amisJson.body[1].config.series[1].data.push(item.highTemperature );
+                        }
+                    } 
+                    console.log(amisJson);
+                    let amisScoped = amis.embed('#root', amisJson);  
+                });
+                
+            });
+        } else {
+            window.location.href = "index.html";
+        }
+            
+        });
+    
+  </script>
+</body>
+
+</html>
