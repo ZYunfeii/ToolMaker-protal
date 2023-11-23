@@ -1,0 +1,42 @@
+{
+    "type": "page",
+    "body": [{
+      "type": "form",
+      "api": "http://localhost:8080/codegen/mybatis-mapper",
+      "debug": true,
+      "data": {
+        "daoPath": "例如：com.zyf.userDao",
+        "entityPath": "例如：com.zyf.userDo"
+      },
+      "body": [
+        {
+          "type": "input-kv",
+          "name": "kv",
+          "label": "K:表字段 V:实体类字段"
+        },
+        {
+            "type": "input-text",
+            "name": "daoPath",
+            "label": "DAO Path:"
+        },
+        {
+            "name": "entityPath",
+            "type": "input-text",
+            "label": "Entity Path:"
+        },
+        {
+            "name": "tableName",
+            "type": "input-text",
+            "label": "表名称:"
+        },
+        {
+            "type": "code",
+            "language": "xml",
+            "name": "xml",
+            "visibleOn": "typeof xml !== 'undefined'",
+            "label": "返回 xml"
+          }
+      ]
+    }
+    ]
+  }

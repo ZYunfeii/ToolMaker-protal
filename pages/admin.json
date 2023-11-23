@@ -1,16 +1,16 @@
 {
   "type": "page",
+  "title": "Best Tool",
   "body": [
     {
       "type": "tpl",
-      "id": "u:de6a8c705c4e",
       "tpl": "",
       "wrapperComponent": "",
-      "inline": false
+      "inline": false,
+      "id": "u:de6a8c705c4e"
     }
   ],
   "id": "u:0143f549f3de",
-  "title": "Best Tool",
   "asideResizor": false,
   "pullRefresh": {
     "disabled": true
@@ -83,6 +83,16 @@
           "children": [
           ],
           "id": "5"
+        },
+        {
+          "label": "Mybatis XML生成",
+          "to": "codegen.html",
+          "icon": "fa fa-soundcloud",
+          "target": "_self",
+          "badge": "",
+          "children": [
+          ],
+          "id": "6"
         }
       ],
       "id": "u:88ec34be954b"
