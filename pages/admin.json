@@ -37,7 +37,7 @@
         },
         {
           "label": "文件上传",
-          "to": "/file_upload.html",
+          "to": "/fileupload.html",
           "target": "_self",
           "id": "1",
           "children": [

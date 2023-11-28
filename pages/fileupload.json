@@ -1,0 +1,16 @@
+{
+
+    "body": [
+    {
+        "type": "input-file",
+        "label": false,
+        "mode": "horizontal",
+        "accept": "*",
+        "receiver": "http://localhost:8080/upload/file",
+        "multiple": true,
+        "joinValues": false,
+        "autoUpload": false
+    }
+    ]
+
+}
