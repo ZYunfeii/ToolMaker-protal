@@ -29,12 +29,18 @@
 </head>
 
 <body>
+  <div id="file-list"></div>
   <div id="root" class="app-wrapper"></div>
+  
   <script src="sdk.js"></script>
   <script type="text/javascript">
     initHtml('pages/fileupload.json');
-    
+    document.addEventListener('DOMContentLoaded', (event) => {
+        fetchFileList();
+    });
   </script>
+  
+  
 </body>
 
 </html>
