@@ -9,7 +9,11 @@
         "receiver": "http://localhost:8080/upload/file",
         "multiple": true,
         "joinValues": false,
-        "autoUpload": false
+        "autoUpload": false,
+        "startChunkApi": "http://localhost:8080/upload/file/startChunkApi",
+        "chunkApi": "http://localhost:8080/upload/file/chunkApi",
+        "finishChunkApi": "http://localhost:8080/upload/file/finishChunkApi",
+        "maxSize": 67108864
     }
     ]
 
