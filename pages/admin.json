@@ -1,16 +1,7 @@
 {
   "type": "page",
-  "title": "Best Tool",
-  "body": [
-    {
-      "type": "tpl",
-      "tpl": "",
-      "wrapperComponent": "",
-      "inline": false,
-      "id": "u:de6a8c705c4e"
-    }
-  ],
   "id": "u:0143f549f3de",
+  "title": "Best Tool",
   "asideResizor": false,
   "pullRefresh": {
     "disabled": true
@@ -93,9 +84,28 @@
           "children": [
           ],
           "id": "6"
+        },
+        {
+          "label": "chatgpt",
+          "to": "chatgpt.html",
+          "icon": "fa fa-slideshare",
+          "target": "_self",
+          "badge": "",
+          "children": [
+          ],
+          "id": "7"
         }
       ],
       "id": "u:88ec34be954b"
+    }
+  ],
+  "body": [
+    {
+      "type": "tpl",
+      "tpl": "",
+      "wrapperComponent": "",
+      "inline": false,
+      "id": "u:de6a8c705c4e"
     }
   ]
 }
